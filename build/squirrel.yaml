@@ -1,7 +1,7 @@
 __build_info:
   rime_version: 1.16.0
   timestamps:
-    squirrel: 1768354364
+    squirrel: 1791207440
     squirrel.custom: 1793275779
 app_options:
   com.alfredapp.Alfred:
@@ -31,7 +31,7 @@ app_options:
     ascii_mode: true
     vim_mode: true
 chord_duration: 0.1
-config_version: 1.0
+config_version: "2026-01-31"
 keyboard_layout: last
 preset_color_schemes:
   apathy:
@@ -233,6 +233,40 @@ preset_color_schemes:
     hilited_text_color: 0xeeeeee
     name: "純粹的形式／Purity of Form"
     text_color: 0xc2c222
+  purity_of_form_custom:
+    alpha: 1
+    author: "雨過之後、佛振"
+    back_color: 0x545554
+    base_offset: 0
+    border_height: 0
+    border_width: 0
+    candidate_text_color: 0xEEEEEE
+    color_space: srgb
+    comment_font_face: Helvetica
+    comment_font_point: 16
+    comment_text_color: 0x808080
+    corner_radius: 10
+    font_face: ""
+    font_point: 18
+    hilited_candidate_back_color: 0xE3E3E3
+    hilited_candidate_label_color: 0x4C4C4C
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0x808080
+    hilited_corner_radius: 0
+    hilited_text_color: 0xEEEEEE
+    inline_candidate: false
+    inline_preedit: true
+    label_color: 0xBBBBBB
+    label_font_face: Helvetica
+    label_font_point: 12
+    line_spacing: 5
+    mutual_exclusive: false
+    name: "純粹的形式／Purity of Form Custom"
+    shadow_size: 0
+    spacing: 10
+    surrounding_extra_expansion: 0
+    text_color: 0x808080
+    translucency: false
   retro_green:
     author: "佛振 <chen.sst@gmail.com>"
     back_color: 0x000000
@@ -329,6 +363,7 @@ style:
   candidate_format: "[label]. [candidate] [comment]"
   candidate_list_layout: stacked
   color_scheme: mac_light
+  color_scheme_dark: purity_of_form_custom
   comment_font_point: 15
   corner_radius: 8
   font_face: "PingFang SC"
