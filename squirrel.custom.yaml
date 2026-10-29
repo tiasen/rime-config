@@ -4,8 +4,7 @@
 patch:
   # ── 外观 ────────────────────────────────────
   style/color_scheme: mac_light      # 想用深色改成 mac_dark
-  style/candidate_list_layout: linear     # 候选横排（鼠须管 1.1+ 生效的新键；合法值只有 linear/stacked）
-  style/horizontal: true                   # 横排（旧版鼠须管用这个键，保留兼容）
+  style/candidate_list_layout: stacked   # 候选竖排（鼠须管 1.1+ 生效的键）
   style/font_face: "PingFang SC"     # 字体
   style/font_point: 18               # 字号（Retina 屏建议 18~20）
   style/label_font_point: 15
