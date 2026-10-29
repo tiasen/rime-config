@@ -1,0 +1,7 @@
+# Rime patch 文件 · 雾凇全拼方案设置
+# 位置：~/Library/Rime/rime_ice.custom.yaml
+
+patch:
+  # ── 回车键行为 ──────────────────────────────
+  # 默认 Return: commit_raw_input（原样上屏字母），改为 confirm（提交高亮候选）
+  "editor/bindings/Return": confirm

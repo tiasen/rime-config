@@ -29,5 +29,9 @@ patch:
   #   - derive/^n/l/
   #   __include: double_pinyin_flypy.schema.yaml:/speller/algebra
 
+  # ── 回车键行为 ──────────────────────────────
+  # 默认 Return: commit_raw_input（原样上屏字母），改为 confirm（提交高亮候选）
+  "editor/bindings/Return": confirm
+
   # ── 小鹤音形辅码（打了双拼后按 ; 再打形码筛选）──
   # "aux_code/show_aux_notice": "trigger"

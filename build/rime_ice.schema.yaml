@@ -3,7 +3,7 @@ __build_info:
   timestamps:
     default: 1791207440
     default.custom: 1793279872
-    rime_ice.custom: 0
+    rime_ice.custom: 1793282106
     rime_ice.schema: 1791207440
     symbols_v: 1791207440
     symbols_v.custom: 0
@@ -40,7 +40,7 @@ editor:
     "Control+Shift+Return": commit_comment
     Delete: delete
     Escape: cancel
-    Return: commit_raw_input
+    Return: confirm
     space: confirm
 emoji:
   inherit_comment: false
