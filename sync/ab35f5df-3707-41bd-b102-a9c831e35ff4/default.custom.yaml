@@ -1,0 +1,26 @@
+# Rime patch 文件 · 全局设置
+# 位置：~/Library/Rime/default.custom.yaml
+# 注意：永远不要直接改 default.yaml，只改这个 .custom.yaml 补丁
+
+patch:
+  # ── 方案选单 ────────────────────────────────
+  schema_list:
+    - schema: double_pinyin_flypy   # 小鹤双拼（主用）
+    - schema: rime_ice              # 雾凇全拼（备用，偶尔打生僻字时用）
+
+  # ── 候选词数量 ──────────────────────────────
+  "menu/page_size": 7
+
+  # ── 中英切换 ────────────────────────────────
+  # Caps Lock 直接切中／英（和搜狗习惯一致）
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Shift_L: commit_code   # 打了一半按左 Shift：编码原样上屏并转英文
+    Shift_R: commit_code
+    Control_L: noop        # Ctrl 不参与切换，避免误触
+    Control_R: noop
+
+  # ── 翻页键（可选）──────────────────────────
+  # key_binder/bindings:
+  #   - { when: paging, accept: comma, send: Page_Up }
+  #   - { when: paging, accept: period, send: Page_Down }

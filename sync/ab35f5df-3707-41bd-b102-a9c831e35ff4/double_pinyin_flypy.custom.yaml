@@ -1,0 +1,32 @@
+# Rime patch 文件 · 小鹤双拼方案设置
+# 位置：~/Library/Rime/double_pinyin_flypy.custom.yaml
+
+patch:
+  # ── 开关默认状态 ────────────────────────────
+  # 索引对应 double_pinyin_flypy.schema.yaml 里 switches 的顺序：
+  #   0 ascii_mode（中/A）  1 full_shape（半角/全角）
+  #   2 ascii_punct（中文标点）  3 traditionalization（简/繁）  4 emoji
+  # 若升级后顺序变了，直接在 F4 方案选单里手动切换一次即可。
+  "switches/@2/reset": 0   # 默认中文标点
+  "switches/@3/reset": 0   # 默认简体
+  "switches/@4/reset": 1   # 候选里带 emoji
+
+  # ── 候选框里显示双拼编码还是全拼 ────────────
+  # 默认会把 zz 显示成 zou。想显示双拼原码，放开下面两行：
+  # "translator/preedit_format": []
+
+  # ── 模糊音（南方口音按需放开）──────────────
+  # 注意：模糊音规则必须写在双拼规则【之前】
+  # "speller/algebra":
+  #   - derive/^([zcs])h/$1/        # z ↔ zh
+  #   - derive/^([zcs])([^h])/$1h$2/
+  #   - derive/in$/ing/             # in ↔ ing
+  #   - derive/ing$/in/
+  #   - derive/en$/eng/             # en ↔ eng
+  #   - derive/eng$/en/
+  #   - derive/^l/n/                # n ↔ l
+  #   - derive/^n/l/
+  #   __include: double_pinyin_flypy.schema.yaml:/speller/algebra
+
+  # ── 小鹤音形辅码（打了双拼后按 ; 再打形码筛选）──
+  # "aux_code/show_aux_notice": "trigger"
